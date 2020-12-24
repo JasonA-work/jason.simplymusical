@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Page Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    html {
+      color: #888;
+      display: table;
+      font-family: sans-serif;
+      height: 100%;
+      text-align: center;
+      width: 100%;
+    }
+
+    body {
+      display: table-cell;
+      vertical-align: middle;
+      margin: 2em auto;
+    }
+    
+    h1 {
+      font-size: 7em;
+    }
+
+    h2 {
+      color: #555;
+      font-size: 2em;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 1em auto;
+      line-height: 1.8;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #888;
+      position: relative;
+      display: inline-block;
+    }
+    
+    a:hover {
+      color: #444;
+    }
+    
+    a::after {
+      content: '';
+      display: block;
+      width: 50%;
+      height: 1px;
+      background-color: #888;
+      position: absolute;
+      transform: translateX(50%);
+      transition: 700ms;
+    }
+    
+    a:hover::after {
+      background-color: #444;
+      transform: translateX(0);
+    }
+    
+    .clr1 {
+      color: #fc7496;
+    }
+    
+    .clr2 {
+      color: #2a6daf;
+    }
+    
+    .clr3 {
+      color: #f9bf4a;
+    }
+
+    @media only screen and (max-width: 280px) {
+
+      body,
+      p {
+        width: 95%;
+      }
+
+      h1 {
+        font-size: 1.5em;
+        margin: 0 0 0.3em;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <h1><span class="clr2">4</span><span class="clr1">0</span><span class="clr3">4</span></h1>
+  <h2>Oops! Page Not Found</h2>
+  <p>The page you were looking for went Chopin..<br>
+   <a href="/">Click here</a> to get Bach home!</p>
+</body>
+
+</html>
+<!-- IE needs 512+ bytes: https://blogs.msdn.microsoft.com/ieinternals/2010/08/18/friendly-http-error-pages/ -->
